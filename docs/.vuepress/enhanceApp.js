@@ -16,14 +16,14 @@ export default ({ Vue }) => {
       getSpanMethod({ rowIndex, columnIndex }) {
         // console.log("rowIndex", rowIndex, columnIndex);
         // 是否是第二列的第一行
-        if (columnIndex === 1 && rowIndex === 0) {
+        if (columnIndex === 1 && rowIndex === 1) {
           return {
             // 合并两行
             rowspan: 2,
             colspan: 1,
           };
           // 是否第二列的第二行
-        } else if (columnIndex === 1 && rowIndex === 1) {
+        } else if (columnIndex === 1 && rowIndex === 2) {
           return {
             // 不渲染
             rowspan: 0,
